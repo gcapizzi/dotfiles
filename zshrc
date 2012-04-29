@@ -31,6 +31,7 @@ setopt nocorrectall
 
 # RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Better Up and Down keys behavior
 bindkey "^[[A" history-search-backward
