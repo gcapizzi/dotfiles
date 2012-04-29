@@ -18,4 +18,6 @@ git submodules:
     cd ~/.dotfiles
     git submodule update --init
 
-Repeat the same commands to upgrade the dependencies periodically.
+To upgrade the dependencies periodically, use the following command:
+
+    git submodule foreach git pull origin master
