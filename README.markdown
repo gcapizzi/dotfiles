@@ -17,3 +17,5 @@ git submodules:
 
     cd ~/.dotfiles
     git submodule update --init
+
+Repeat the same commands to upgrade the dependencies periodically.
