@@ -3,6 +3,7 @@
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+call pathogen#helptags()
 filetype off
 filetype plugin indent on
 set nocompatible
