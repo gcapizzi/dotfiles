@@ -3,7 +3,7 @@
 These are my personal dotfiles. To use them, just clone the repo in your
 home directory:
 
-    git clone git@github.com:gcapizzi/dotfiles.git ~/.dotfiles
+    git clone https://github.com/gcapizzi/dotfiles.git ~/.dotfiles
 
 and then make symlinks:
 
