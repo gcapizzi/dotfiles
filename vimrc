@@ -40,8 +40,8 @@ set visualbell
 
 " Wildmenu completion
 set wildmenu
-" set wildmode=list:longest
-set wildmode=full
+set wildmode=list:longest
+" set wildmode=full
 
 " Color scheme
 syntax on
@@ -167,6 +167,7 @@ au Filetype nerdtree setlocal nolist
 let NERDTreeHighlightCursorline=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let NERDTreeChDirMode = 2
 let g:NERDTreeWinSize = 40
 
 " Supertab
