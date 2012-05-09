@@ -10,7 +10,7 @@ set nocompatible
 
 " Basic options ---------------------------------------------------------------
 
-if exists("autochdir")
+if exists("+autochdir")
     set autochdir
 endif
 set autoindent
