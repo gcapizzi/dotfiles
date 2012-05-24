@@ -143,13 +143,10 @@ if has("autocmd")
   " Remove any trailing whitespace that is in the file
   autocmd BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
 
-  " Ruby-specific settings
+  " Filetype-specific settings
   autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
-
-  " HTML-specific settings
+  autocmd Filetype php set tabstop=4 shiftwidth=4 softtabstop=4
   autocmd BufRead *.html,*.htm set tabstop=2 shiftwidth=2 softtabstop=2 nowrap
-
-  " TXT-specific settings
   autocmd BufRead *.txt set tabstop=2 shiftwidth=2 softtabstop=2
 
   augroup END
