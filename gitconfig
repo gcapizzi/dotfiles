@@ -15,7 +15,7 @@
   co = checkout
   df = diff
   dc = diff --cached
-  lg = log -p
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   who = shortlog -s --
   aa = add -A
 [merge]
