@@ -37,6 +37,7 @@ set splitright
 set title
 set ttyfast
 set visualbell
+set relativenumber
 
 " Wildmenu completion
 set wildmenu
