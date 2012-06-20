@@ -181,6 +181,10 @@ map <leader>a :Ack!<space>
 
 let g:Powerline_symbols = 'fancy'
 
+"CtrlP
+
+let g:ctrlp_extensions = ['tag']
+
 " Environments (GUI/Console) --------------------------------------------------
 
 if has("gui_running")
