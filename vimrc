@@ -185,6 +185,8 @@ let g:Powerline_symbols = 'fancy'
 
 let g:ctrlp_extensions = ['tag']
 
+map <C-t> :CtrlPTag<CR>
+
 " Environments (GUI/Console) --------------------------------------------------
 
 if has("gui_running")
