@@ -132,6 +132,10 @@ cmap w!! w !sudo tee % >/dev/null
 " Toggle search highlighting
 map <Leader>h :set invhls <CR>
 
+" Fuck you, help key
+noremap  <F1> <NOP>
+inoremap <F1> <NOP>
+
 " Autocommands ----------------------------------------------------------------
 
 if has("autocmd")
