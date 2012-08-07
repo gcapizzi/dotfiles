@@ -34,7 +34,9 @@ set splitright
 set title
 set ttyfast
 set visualbell
-set relativenumber
+if has("+relativenumber")
+    set relativenumber
+endif
 
 " Wildmenu completion
 set wildmenu
