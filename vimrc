@@ -45,6 +45,7 @@ set wildmode=list:longest
 syntax on
 set background=dark
 colorscheme solarized
+set t_Co=16 " make VIM look like GVim with Solarized colors!
 
 " Tabs, spaces, wrapping
 set tabstop=4
