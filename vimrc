@@ -183,8 +183,9 @@ map <leader>a :Ack!<space>
 
 let g:Powerline_symbols = 'fancy'
 
-"CtrlP
+" CtrlP
 
+let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
