@@ -192,6 +192,11 @@ let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
 
+" Taglist
+
+let Tlist_Use_Right_Window = 1
+let Tlist_Compact_Format = 1
+
 " Environments (GUI/Console) --------------------------------------------------
 
 if has("gui_running")
