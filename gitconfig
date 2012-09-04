@@ -8,6 +8,7 @@
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.cvsignore
+  autocrlf = input
 [alias]
   st = status
   ci = commit
