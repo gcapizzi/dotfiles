@@ -1,23 +1,23 @@
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+	branch = auto
+	diff = auto
+	status = auto
 [user]
-  name = Giuseppe Capizzi
-  email = g.capizzi@gmail.com
+	name = Giuseppe Capizzi
+	email = g.capizzi@gmail.com
 [core]
-  editor = /usr/bin/vim
-  excludesfile = ~/.cvsignore
-  autocrlf = input
+	editor = /usr/bin/vim
+	excludesfile = ~/.cvsignore
+	autocrlf = input
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  dc = diff --cached
-  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  who = shortlog -s --
-  aa = add -A
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	who = shortlog -s --
+	aa = add -A
 [merge]
-  renamelimit = 3315
+	renamelimit = 3315
