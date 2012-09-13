@@ -138,6 +138,18 @@ inoremap <F1> <NOP>
 
 " Autocommands ----------------------------------------------------------------
 
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
 if has("autocmd")
 
   set omnifunc=syntaxcomplete#Complete
@@ -146,7 +158,7 @@ if has("autocmd")
   au!
 
   " Remove any trailing whitespace that is in the file
-  autocmd BufWrite * if ! &bin | silent! %s/\s\+$//ge | endif
+  autocmd BufWrite * if ! &bin | :call <SID>StripTrailingWhitespaces() | endif
 
   " Filetype-specific settings
   autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
