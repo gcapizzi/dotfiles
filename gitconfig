@@ -21,3 +21,5 @@
 	aa = add -A
 [merge]
 	renamelimit = 3315
+[diff]
+	ignoreSubmodules = dirty
