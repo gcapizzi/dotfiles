@@ -145,18 +145,6 @@ vnoremap > >gv
 
 " Autocommands ----------------------------------------------------------------
 
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-
 if has("autocmd")
 
   set omnifunc=syntaxcomplete#Complete
@@ -165,7 +153,7 @@ if has("autocmd")
   au!
 
   " Remove any trailing whitespace that is in the file
-  autocmd BufWrite * if ! &bin | :call <SID>StripTrailingWhitespaces() | endif
+  autocmd BufWrite * if ! &bin | :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")')) | endif
 
   " Filetype-specific settings
   autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
