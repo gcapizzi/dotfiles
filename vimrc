@@ -136,6 +136,13 @@ map <Leader>h :set invhls <CR>
 noremap  <F1> <NOP>
 inoremap <F1> <NOP>
 
+" Change Working Directory to that of the current file
+cmap cwd lcd %:p:h
+
+" Visual shifting (does not exit Visual mode)
+vnoremap < <gv
+vnoremap > >gv
+
 " Autocommands ----------------------------------------------------------------
 
 function! <SID>StripTrailingWhitespaces()
