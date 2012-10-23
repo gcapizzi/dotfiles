@@ -123,9 +123,6 @@ nnoremap <leader>s :%s//<left>
 " Formatting, TextMate-style
 nnoremap Q gqip
 
-" Faster Esc
-inoremap jk <esc>
-
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
 
