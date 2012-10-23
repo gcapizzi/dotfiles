@@ -33,6 +33,9 @@ setopt nocorrectall
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+# Homebrew
+PATH=/usr/local/bin:$PATH
+
 # Better Up and Down keys behavior
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
