@@ -50,8 +50,9 @@ set wildmode=list:longest
 " Color scheme
 syntax on
 set background=dark
-colorscheme solarized
-set t_Co=16 " make VIM look like GVim with Solarized colors!
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+    colorscheme solarized
+endif
 
 " Tabs, spaces, wrapping
 set tabstop=4
