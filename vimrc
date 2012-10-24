@@ -1,12 +1,15 @@
-
 " Preamble --------------------------------------------------------------------
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-call pathogen#helptags()
-filetype off
-filetype plugin indent on
 set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles
+Bundle 'gmarik/vundle'
+
+filetype plugin indent on
 
 " Basic options ---------------------------------------------------------------
 
