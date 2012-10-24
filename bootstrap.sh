@@ -4,6 +4,10 @@ endpath="$HOME/.dotfiles"
 
 echo "Bootstrap started\n"
 
+echo "\n> install oh-my-zsh\n"
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+chsh -s `which zsh`
+
 echo "> clone repo\n"
 git clone http://github.com/gcapizzi/dotfiles.git $endpath
 
@@ -24,7 +28,3 @@ fi
 
 echo "\n> update/install plugins using Vundle\n"
 vim +BundleInstall! +BundleClean +qall
-
-echo "\n> install oh-my-zsh\n"
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-chsh -s `which zsh`
