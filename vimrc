@@ -8,6 +8,7 @@ call vundle#rc()
 
 " Bundles
 Bundle 'gmarik/vundle'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on
 
