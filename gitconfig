@@ -23,3 +23,5 @@
 	renamelimit = 3315
 [diff]
 	ignoreSubmodules = dirty
+[credential]
+	helper = osxkeychain
