@@ -10,7 +10,7 @@
 	excludesfile = ~/.cvsignore
 	autocrlf = input
 [alias]
-	st = status
+	st = status -sb
 	ci = commit
 	br = branch
 	co = checkout
