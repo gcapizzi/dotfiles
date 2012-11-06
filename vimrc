@@ -119,6 +119,12 @@ if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"
     colorscheme solarized
 endif
 
+" Scrolling ==================================================================
+
+set scrolloff=8
+set sidescrolloff=15
+set sidescroll=1
+
 " Convenience mappings =======================================================
 
 " Make capitals behave
