@@ -227,7 +227,7 @@ let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
 
-" Environments (GUI/Console) --------------------------------------------------
+" Environments (GUI/Console) =================================================
 
 if has("gui_running")
 
