@@ -188,8 +188,6 @@ endif " has("autocmd")
 
 map <Leader>n :NERDTreeToggle<cr>
 
-au Filetype nerdtree setlocal nolist
-
 let NERDTreeHighlightCursorline=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
