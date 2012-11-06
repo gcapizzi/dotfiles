@@ -44,7 +44,6 @@ set backspace=indent,eol,start
 set cursorline
 set dictionary=/usr/share/dict/words
 set encoding=utf-8
-" set hidden
 set history=1000
 set laststatus=2
 set lazyredraw
@@ -62,14 +61,10 @@ set splitright
 set title
 set ttyfast
 set visualbell
-if has("+relativenumber")
-    set relativenumber
-endif
 
 " Wildmenu completion
 set wildmenu
 set wildmode=list:longest
-" set wildmode=full
 
 " Color scheme
 syntax on
@@ -118,10 +113,6 @@ runtime macros/matchit.vim
 " Make capitals behave
 nnoremap D d$
 nnoremap Y y$
-
-" Easier to type, and I never use the default behavior.
-noremap H ^
-noremap L g_
 
 " It's 2011.
 noremap j gj
@@ -224,11 +215,6 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
-
-" Taglist
-
-let Tlist_Use_Right_Window = 1
-let Tlist_Compact_Format = 1
 
 " Environments (GUI/Console) --------------------------------------------------
 
