@@ -1,8 +1,8 @@
-" Preamble --------------------------------------------------------------------
-
 set nocompatible
-filetype off
 
+" Vundle =====================================================================
+
+filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -34,11 +34,8 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'VimClojure'
 Bundle 'matchit.zip'
 
-filetype plugin indent on
+" General Config =============================================================
 
-" Basic options ---------------------------------------------------------------
-
-set autoindent
 set autoread
 set backspace=indent,eol,start
 set cursorline
@@ -47,13 +44,11 @@ set encoding=utf-8
 set history=1000
 set laststatus=2
 set lazyredraw
-set list listchars=tab:»·,trail:·
 set modelines=0
 set number
 set numberwidth=5
 set ruler
 set shiftround
-set showbreak=↪
 set showcmd
 set showmode
 set splitbelow
@@ -62,22 +57,40 @@ set title
 set ttyfast
 set visualbell
 
-" Wildmenu completion
-set wildmenu
-set wildmode=list:longest
+" Leader
+let mapleader = ","
+let maplocalleader = "\\"
 
-" Color scheme
-syntax on
-set background=dark
-if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
-    colorscheme solarized
-endif
+" Search Settings ============================================================
 
-" Tabs, spaces, wrapping
-set tabstop=4
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+" Persistent undo and backups ================================================
+
+silent !mkdir -p ~/.vim/tmp/undo > /dev/null 2>&1
+silent !mkdir -p ~/.vim/tmp/backup > /dev/null 2>&1
+silent !mkdir -p ~/.vim/tmp/swap > /dev/null 2>&1
+
+set undodir=~/.vim/tmp/undo
+set undoreload=10000
+set undofile
+set backupdir=~/.vim/tmp/backup
+set directory=~/.vim/tmp/swap
+set backup
+
+" Indentation and wrapping ===================================================
+
+set autoindent
+set smartindent
+set smarttab
 set shiftwidth=4
 set softtabstop=4
+set tabstop=4
 set expandtab
+
 set wrap
 set textwidth=78
 set formatoptions=qn1
@@ -87,28 +100,26 @@ catch /Unknown option/
     " old Vim version
 endtry
 
-" Leader
-let mapleader = ","
-let maplocalleader = "\\"
+filetype plugin on
+filetype indent on
 
-" Backups
-if has("persistent_undo")
-    set undofile
-    set undoreload=10000
-    set undodir=~/.vim/tmp/undo//
+set list listchars=tab:»·,trail:·
+set showbreak=↪
+
+" Completion =================================================================
+
+set wildmode=list:longest
+set wildmenu
+
+" Colors =====================================================================
+
+syntax on
+set background=dark
+if filereadable(expand("~/.vim/bundle/vim-colors-solarized/colors/solarized.vim"))
+    colorscheme solarized
 endif
-set backupdir=~/.vim/tmp/backup//
-set directory=~/.vim/tmp/swap//
-set backup
 
-" Searching and movement ------------------------------------------------------
-
-set ignorecase
-set smartcase
-set incsearch
-set hlsearch
-
-runtime macros/matchit.vim
+" Convenience mappings =======================================================
 
 " Make capitals behave
 nnoremap D d$
@@ -135,8 +146,6 @@ noremap   <Left>   <NOP>
 inoremap  <Right>  <NOP>
 noremap   <Right>  <NOP>
 
-" Convenience mappings --------------------------------------------------------
-
 " Substitute
 nnoremap <leader>s :%s//<left>
 
@@ -160,7 +169,7 @@ cmap cwd lcd %:p:h
 vnoremap < <gv
 vnoremap > >gv
 
-" Autocommands ----------------------------------------------------------------
+" Autocommands ===============================================================
 
 if has("autocmd")
 
@@ -182,7 +191,11 @@ if has("autocmd")
 
 endif " has("autocmd")
 
-" Plugin settings -------------------------------------------------------------
+" Plugin settings ============================================================
+
+" Matchit.vim
+
+runtime macros/matchit.vim
 
 " NERD Tree
 
