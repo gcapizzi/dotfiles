@@ -11,11 +11,6 @@ chsh -s `which zsh`
 echo "\n> clone repo\n"
 git clone http://github.com/gcapizzi/dotfiles.git $endpath
 
-echo "\n> create directories\n"
-mkdir -p $endpath/vim/tmp/undo
-mkdir -p $endpath/vim/tmp/backup
-mkdir -p $endpath/vim/tmp/swap
-
 echo "> set up symlinks\n"
 ln -s $endpath/vim $HOME/.vim
 ln -s $endpath/vimrc $HOME/.vimrc
