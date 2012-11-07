@@ -12,7 +12,6 @@ echo "\n> clone repo\n"
 git clone http://github.com/gcapizzi/dotfiles.git $endpath
 
 echo "> set up symlinks\n"
-ln -s $endpath/vim $HOME/.vim
 ln -s $endpath/vimrc $HOME/.vimrc
 ln -s $endpath/zshrc $HOME/.zshrc
 ln -s $endpath/gitconfig $HOME/.gitconfig
