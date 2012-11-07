@@ -131,7 +131,7 @@ set sidescroll=1
 nnoremap D d$
 nnoremap Y y$
 
-" It's 2011.
+" It's 2012.
 noremap j gj
 noremap k gk
 
