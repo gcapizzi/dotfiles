@@ -175,6 +175,10 @@ cmap cwd lcd %:p:h
 vnoremap < <gv
 vnoremap > >gv
 
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
 " Autocommands ===============================================================
 
 if has("autocmd")
