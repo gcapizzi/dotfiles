@@ -162,7 +162,7 @@ nnoremap Q gqip
 cmap w!! w !sudo tee % >/dev/null
 
 " Toggle search highlighting
-map <Leader>h :set invhls <CR>
+map <Leader>h :nohlsearch<CR>
 
 " Fuck you, help key
 noremap  <F1> <NOP>
