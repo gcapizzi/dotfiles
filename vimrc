@@ -48,7 +48,6 @@ set lazyredraw
 set modelines=0
 set number
 set numberwidth=5
-set shiftround
 set showcmd
 set showmatch
 set showmode
@@ -91,6 +90,7 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+set shiftround
 
 set wrap
 set textwidth=78
