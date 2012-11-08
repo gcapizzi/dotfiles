@@ -51,6 +51,7 @@ set numberwidth=5
 set ruler
 set shiftround
 set showcmd
+set showmatch
 set showmode
 set splitbelow
 set splitright
