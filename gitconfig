@@ -25,3 +25,5 @@
 	ignoreSubmodules = dirty
 [credential]
 	helper = osxkeychain
+[push]
+	default = simple
