@@ -271,3 +271,9 @@ if has("gui_running")
         set fuoptions=maxvert
     endif
 endif
+
+" Local vimrc ================================================================
+
+if filereadable(expand("~/.vimrc.local"))
+    source ~/.vimrc.local
+endif
