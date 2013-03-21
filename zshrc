@@ -39,3 +39,10 @@ PATH=/usr/local/bin:$PATH
 # Better Up and Down keys behavior
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
+
+# Colored output
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+# Aliases
+alias ls='ls -FGhp'
