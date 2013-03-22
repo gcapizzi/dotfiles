@@ -17,7 +17,7 @@
 	df = diff
 	dc = diff --cached
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	td = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --since='yesterday'
+	td = "!git lg --since='yesterday'"
 	who = shortlog -s --
 	aa = add -A
 [merge]
