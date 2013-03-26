@@ -36,6 +36,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Homebrew
 PATH=/usr/local/bin:$PATH
 
+# NPM
+PATH=/usr/local/share/npm/bin:$PATH
+
 # Better Up and Down keys behavior
 bindkey "^[[A" history-search-backward
 bindkey "^[[B" history-search-forward
