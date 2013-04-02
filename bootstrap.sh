@@ -27,6 +27,7 @@ ln -sf $endpath/vimrc $HOME/.vimrc
 ln -sf $endpath/zshrc $HOME/.zshrc
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
+ln -sf $endpath/gemrc $HOME/.gemrc
 
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
     echo "> install Vundle\n"
