@@ -239,6 +239,12 @@ let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
 
+" Rspec.vim
+
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+
 " Environments (GUI/Console) =================================================
 
 if has("gui_running")
