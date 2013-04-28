@@ -26,6 +26,10 @@ source $ZSH/oh-my-zsh.sh
 # Tab-complete .. !
 zstyle ':completion:*' special-dirs true
 
+# Better history search with pgup/pgdown
+bindkey "^[[5~" history-beginning-search-backward
+bindkey "^[[6~" history-beginning-search-forward
+
 # Disable argument correction
 setopt nocorrectall
 
