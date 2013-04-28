@@ -188,7 +188,6 @@ if has("autocmd")
 
   " Filetype-specific settings
   autocmd Filetype ruby set tabstop=2 shiftwidth=2 softtabstop=2
-  autocmd Filetype php set tabstop=4 shiftwidth=4 softtabstop=4
   autocmd BufRead *.html,*.htm set tabstop=2 shiftwidth=2 softtabstop=2 nowrap
   autocmd BufRead *.txt set tabstop=2 shiftwidth=2 softtabstop=2
 
