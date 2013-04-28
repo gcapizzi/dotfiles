@@ -54,3 +54,4 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # Aliases
 alias ls='ls -FGhp'
 alias myip='echo `curl -s ipecho.net/plain`'
+alias vim='mvim -v'
