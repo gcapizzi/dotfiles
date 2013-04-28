@@ -230,10 +230,6 @@ let g:ctrlp_extensions = ['tag']
 
 map <C-t> :CtrlPTag<CR>
 
-" Syntastic
-
-let g:syntastic_ruby_exec = '~/.rvm/bin/default_ruby'
-
 " Environments (GUI/Console) =================================================
 
 if has("gui_running")
