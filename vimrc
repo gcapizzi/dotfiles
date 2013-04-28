@@ -143,6 +143,9 @@ map <S-L> gt
 " Substitute
 nnoremap <leader>s :%s//<left>
 
+" Clear search highlighting
+map <C-l> :nohlsearch<CR>
+
 " Fuck you, help key
 noremap  <F1> <NOP>
 inoremap <F1> <NOP>
@@ -162,9 +165,6 @@ nnoremap Q gqip
 
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
-
-" Toggle search highlighting
-map <Leader>h :nohlsearch<CR>
 
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
