@@ -140,6 +140,13 @@ noremap k gk
 map <S-H> gT
 map <S-L> gt
 
+" Substitute
+nnoremap <leader>s :%s//<left>
+
+" Fuck you, help key
+noremap  <F1> <NOP>
+inoremap <F1> <NOP>
+
 " Disable those arrow keys!
 inoremap  <Up>     <NOP>
 noremap   <Up>     <NOP>
@@ -150,9 +157,6 @@ noremap   <Left>   <NOP>
 inoremap  <Right>  <NOP>
 noremap   <Right>  <NOP>
 
-" Substitute
-nnoremap <leader>s :%s//<left>
-
 " Formatting, TextMate-style
 nnoremap Q gqip
 
@@ -161,10 +165,6 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Toggle search highlighting
 map <Leader>h :nohlsearch<CR>
-
-" Fuck you, help key
-noremap  <F1> <NOP>
-inoremap <F1> <NOP>
 
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
