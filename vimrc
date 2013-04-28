@@ -136,12 +136,6 @@ nnoremap Y y$
 noremap j gj
 noremap k gk
 
-" Easy buffer navigation
-noremap <C-h>     <C-w>h
-noremap <C-j>     <C-w>j
-noremap <C-k>     <C-w>k
-noremap <C-l>     <C-w>l
-noremap <leader>v <C-w>v
 
 " Disable those arrow keys!
 inoremap  <Up>     <NOP>
