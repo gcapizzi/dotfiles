@@ -6,35 +6,33 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" Bundles
+" Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'VimClojure'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'ervandew/supertab'
+Bundle 'matchit.zip'
+Bundle 'mileszs/ack.vim'
+Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vividchalk'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'sjl/gundo.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'msanders/snipmate.vim'
-Bundle 'kana/vim-textobj-function'
-Bundle 'kana/vim-textobj-indent'
-Bundle 'kana/vim-textobj-line'
-Bundle 'kana/vim-textobj-user'
-Bundle 'VimClojure'
-Bundle 'matchit.zip'
 
 " General Config =============================================================
 
