@@ -30,6 +30,11 @@ ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
 ln -sf $endpath/gemrc $HOME/.gemrc
 
+echo "> create Vim folders"
+mkdir -p $HOME/.vim/tmp/undo
+mkdir -p $HOME/.vim/tmp/backup
+mkdir -p $HOME/.vim/tmp/swap
+
 if [ ! -e $HOME/.vim/bundle/vundle ]; then
     echo "> install Vundle\n"
     git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
