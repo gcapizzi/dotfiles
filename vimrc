@@ -213,7 +213,6 @@ let g:NERDTreeWinSize = 40
 
 " Supertab
 
-let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabLongestHighlight = 1
 
 " Ack
