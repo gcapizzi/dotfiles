@@ -160,9 +160,6 @@ noremap   <Left>   <NOP>
 inoremap  <Right>  <NOP>
 noremap   <Right>  <NOP>
 
-" Sudo to write
-cmap w!! w !sudo tee % >/dev/null
-
 " Change Working Directory to that of the current file
 cmap cwd lcd %:p:h
 
@@ -173,6 +170,9 @@ vnoremap > >gv
 " Quickly edit/reload the vimrc file
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+" Save as root even if not root
+cmap w!! %!sudo tee > /dev/null %
 
 " Autocommands ===============================================================
 
