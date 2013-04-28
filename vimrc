@@ -136,6 +136,9 @@ nnoremap Y y$
 noremap j gj
 noremap k gk
 
+" Easy tab navigation
+map <S-H> gT
+map <S-L> gt
 
 " Disable those arrow keys!
 inoremap  <Up>     <NOP>
