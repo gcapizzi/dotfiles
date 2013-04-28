@@ -160,9 +160,6 @@ noremap   <Left>   <NOP>
 inoremap  <Right>  <NOP>
 noremap   <Right>  <NOP>
 
-" Formatting, TextMate-style
-nnoremap Q gqip
-
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
 
