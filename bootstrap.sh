@@ -25,6 +25,7 @@ fi
 echo "> set up symlinks\n"
 ln -sf $endpath/vimrc $HOME/.vimrc
 ln -sf $endpath/zshrc $HOME/.zshrc
+ln -sf $endpath/zshenv $HOME/.zshenv
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
 ln -sf $endpath/gemrc $HOME/.gemrc
