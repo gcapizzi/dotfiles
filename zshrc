@@ -55,3 +55,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 alias ls='ls -FGhp'
 alias myip='echo `curl -s ipecho.net/plain`'
 alias vim='mvim -v'
+
+# Play better with Tmux
+DISABLE_AUTO_TITLE=true
