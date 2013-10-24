@@ -33,10 +33,6 @@ bindkey "^[[6~" history-beginning-search-forward
 # Disable argument correction
 setopt nocorrectall
 
-# RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Homebrew
 PATH=/usr/local/bin:$PATH
 
@@ -57,3 +53,6 @@ alias myip='echo `curl -s ipecho.net/plain`'
 
 # Play better with Tmux
 DISABLE_AUTO_TITLE=true
+
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
