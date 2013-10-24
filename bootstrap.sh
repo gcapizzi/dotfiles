@@ -29,6 +29,7 @@ ln -sf $endpath/zshenv $HOME/.zshenv
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
 ln -sf $endpath/gemrc $HOME/.gemrc
+ln -sf $endpath/tmux.conf $HOME/.tmux.conf
 
 echo "> create Vim folders"
 mkdir -p $HOME/.vim/tmp/undo
