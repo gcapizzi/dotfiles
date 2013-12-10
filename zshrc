@@ -55,9 +55,8 @@ alias myip='echo `curl -s ipecho.net/plain`'
 export DISABLE_AUTO_TITLE=true
 
 # Chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+[ -e /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
+[ -e /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Default editor
 export EDITOR='vim'
-
