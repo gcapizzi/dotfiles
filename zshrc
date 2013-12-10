@@ -17,7 +17,7 @@ export ZSH_THEME="theunraveler"
 # Which plugins would you like to load? (plugins can be found in
 # ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew gem git osx rails3)
+plugins=(brew gem git osx rails)
 
 source $ZSH/oh-my-zsh.sh
 
