@@ -1,0 +1,21 @@
+" use Solarized dark on a solarized dark terminal
+set background=dark
+set t_Co=256
+let g:solarized_termcolors=16
+colorscheme solarized
+
+" use the_silver_searcher instead of ack
+let g:ackprg='ag --nogroup --nocolor --column'
+
+" enable rainbow_parentheses for clojure files
+if has("autocmd")
+    autocmd Filetype clojure RainbowParenthesesToggle
+    autocmd Filetype clojure RainbowParenthesesLoadRound
+    autocmd Filetype clojure RainbowParenthesesLoadSquare
+    autocmd Filetype clojure RainbowParenthesesLoadBraces
+endif
+
+set colorcolumn=80
+
+" ctrlp-cmatcher
+let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
