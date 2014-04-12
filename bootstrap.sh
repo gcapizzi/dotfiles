@@ -23,23 +23,9 @@ else
 fi
 
 echo "> set up symlinks\n"
-ln -sf $endpath/vimrc $HOME/.vimrc
 ln -sf $endpath/zshrc $HOME/.zshrc
 ln -sf $endpath/zshenv $HOME/.zshenv
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
 ln -sf $endpath/gemrc $HOME/.gemrc
 ln -sf $endpath/tmux.conf $HOME/.tmux.conf
-
-echo "> create Vim folders"
-mkdir -p $HOME/.vim/tmp/undo
-mkdir -p $HOME/.vim/tmp/backup
-mkdir -p $HOME/.vim/tmp/swap
-
-if [ ! -e $HOME/.vim/bundle/vundle ]; then
-    echo "> install Vundle\n"
-    git clone http://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle
-fi
-
-echo "\n> update/install plugins using Vundle\n"
-vim </dev/tty +BundleInstall! +BundleClean +qall
