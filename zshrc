@@ -50,6 +50,7 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 # Aliases
 alias ls='ls -FGhp'
 alias myip='echo `curl -s ipecho.net/plain`'
+alias pro='tmux new-session -s "${PWD##*/}" -n vim /usr/local/bin/vim'
 
 # Play better with Tmux
 export DISABLE_AUTO_TITLE=true
