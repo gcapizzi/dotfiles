@@ -34,7 +34,7 @@ bindkey "^[[6~" history-beginning-search-forward
 setopt nocorrectall
 
 # Homebrew
-PATH=/usr/local/bin:$PATH
+PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # NPM
 PATH=/usr/local/share/npm/bin:$PATH
