@@ -61,3 +61,6 @@ export DISABLE_AUTO_TITLE=true
 
 # Default editor
 export EDITOR='vim'
+
+# NVM
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh
