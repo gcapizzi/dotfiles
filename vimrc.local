@@ -19,3 +19,6 @@ set colorcolumn=80
 
 " ctrlp-cmatcher
 let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
+
+" vim-clojure-static
+autocmd FileType clojure setlocal lispwords+=fact,facts
