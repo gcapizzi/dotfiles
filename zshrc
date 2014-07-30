@@ -63,3 +63,6 @@ RUBIES+="$HOME/Projects/oss/rubinius"
 
 # Default editor
 export EDITOR='vim'
+
+# Cabal
+export PATH=~/.cabal/bin:$PATH
