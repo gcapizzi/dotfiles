@@ -1,5 +1,7 @@
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'JazzCore/ctrlp-cmatcher'
+Bundle 'wting/rust.vim'
+Bundle 'StanAngeloff/php.vim'
 
 " Clojure
 Bundle 'tpope/vim-fireplace'
