@@ -66,3 +66,6 @@ export EDITOR='vim'
 
 # Cabal
 export PATH=~/.cabal/bin:$PATH
+
+# z
+. `brew --prefix`/etc/profile.d/z.sh
