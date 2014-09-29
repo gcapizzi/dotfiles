@@ -2,6 +2,7 @@
     branch = auto
     diff = auto
     status = auto
+    ui = auto
 [user]
     name = Giuseppe Capizzi
     email = g.capizzi@gmail.com
