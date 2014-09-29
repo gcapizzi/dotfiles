@@ -68,4 +68,4 @@ export EDITOR='vim'
 export PATH=~/.cabal/bin:$PATH
 
 # z
-. `brew --prefix`/etc/profile.d/z.sh
+[ -e `brew --prefix`/etc/profile.d/z.sh ] && . `brew --prefix`/etc/profile.d/z.sh
