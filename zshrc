@@ -69,3 +69,6 @@ export PATH=~/.cabal/bin:$PATH
 
 # z
 [ -e `brew --prefix`/etc/profile.d/z.sh ] && . `brew --prefix`/etc/profile.d/z.sh
+
+# gh
+command -v gh >/dev/null 2>&1 && alias git=gh
