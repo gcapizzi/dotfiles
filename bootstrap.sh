@@ -40,3 +40,6 @@ ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/cvsignore $HOME/.cvsignore
 ln -sf $endpath/gemrc $HOME/.gemrc
 ln -sf $endpath/tmux.conf $HOME/.tmux.conf
+
+echo "\n> update/install Vim plugins using Vundle\n"
+vim </dev/tty +PluginInstall +PluginClean +qall
