@@ -2,6 +2,7 @@
 
 endpath="$HOME/.dotfiles"
 ohmyzshpath="$HOME/.oh-my-zsh"
+zshshpath="$ohmyzshpath/custom/plugins/zsh-syntax-highlighting"
 
 echo "\n### Bootstrap started ###"
 
@@ -10,8 +11,16 @@ if [ -e $ohmyzshpath/.git ]; then
     cd $ohmyzshpath && git pull
 else
     echo "\n> install oh-my-zsh\n"
-    git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+    git clone git://github.com/robbyrussell/oh-my-zsh.git $ohmyzshpath
     chsh -s `which zsh`
+fi
+
+if [ -e $zshshpath/.git ]; then
+    echo "\n> update zsh-syntax-highlighting\n"
+    cd $zshshpath && git pull
+else
+    echo "\n> install zsh-syntax-highlighting\n"
+    git clone git://github.com/zsh-users/zsh-syntax-highlighting.git $zshshpath
 fi
 
 if [ -e $endpath/.git ]; then
