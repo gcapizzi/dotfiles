@@ -3,6 +3,7 @@
 endpath="$HOME/.dotfiles"
 ohmyzshpath="$HOME/.oh-my-zsh"
 zshshpath="$ohmyzshpath/custom/plugins/zsh-syntax-highlighting"
+vimpath="$HOME/.vim"
 
 echo "\n### Bootstrap started ###"
 
@@ -43,3 +44,9 @@ ln -sf $endpath/tmux.conf $HOME/.tmux.conf
 
 echo "\n> update/install Vim plugins using Vundle\n"
 vim </dev/tty +PluginInstall +PluginClean +qall
+
+echo "\n> build ctrlp-cmatcher\n"
+export CFLAGS=-Qunused-arguments
+export CPPFLAGS=-Qunused-arguments
+cd $vimpath/bundle/ctrlp-cmatcher
+./install.sh
