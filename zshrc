@@ -59,8 +59,6 @@ export DISABLE_AUTO_TITLE=true
 [ -e /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
 [ -e /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
 
-RUBIES+="$HOME/Projects/oss/rubinius"
-
 # Default editor
 export EDITOR='vim'
 
