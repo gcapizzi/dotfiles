@@ -13,4 +13,17 @@ set colorcolumn=80
 let g:ctrlp_match_func = { 'match' : 'matcher#cmatch' }
 
 " vim-clojure-static
-autocmd FileType clojure setlocal lispwords+=fact,facts,describe,it,match
+autocmd FileType clojure setlocal lispwords+=ns,match,fact,facts,describe,it,context,render,render-state,init-state,will-mount
+
+let g:clojure_fuzzy_indent_patterns = [
+    \'^def', '^with', '^let', '^om', '^dom'
+    \]
+
+let g:clojure_syntax_keywords = {
+    \'clojureMacro': [
+        \'fact', 'facts',
+        \'describe', 'it', 'context',
+        \'match',
+        \'defcomponent', 'init-state', 'render', 'render-state', 'will-mount'
+        \]
+    \}
