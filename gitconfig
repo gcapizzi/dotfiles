@@ -19,6 +19,7 @@
     dc = diff --cached
     lg = "!. ~/.dotfiles/githelpers && pretty_git_log"
     lga = "!git lg --branches --remotes --tags"
+    lgaa = log --oneline --graph --color --decorate --all
     td = "!git lg --since='yesterday'"
     tdf = diff "@{yesterday}"
     who = shortlog -s --
