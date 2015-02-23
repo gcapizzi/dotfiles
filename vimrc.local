@@ -27,3 +27,7 @@ let g:clojure_syntax_keywords = {
         \'defcomponent', 'init-state', 'render', 'render-state', 'will-mount'
         \]
     \}
+
+" haskellmode-vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
