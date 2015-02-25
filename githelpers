@@ -7,7 +7,7 @@ SUBJECT="%s"
 FORMAT="$HASH $REFS $SUBJECT $RELATIVE_TIME $AUTHOR"
 
 pretty_git_log() {
-    git log --graph --pretty="tformat:${FORMAT}" $* | less -FXRS
+    git log --graph --color --pretty="tformat:${FORMAT}" $* | less -FXRS
 }
 
 pretty_git_log_all() {
