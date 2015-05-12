@@ -1,27 +1,8 @@
-# Path to your oh-my-zsh configuration.
+# Oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
-
-# Set to the name theme to load.
-# Look in ~/.oh-my-zsh/themes/
 export ZSH_THEME="theunraveler"
-
-# Set to this to use case-sensitive completion
-# export CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# export DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# export DISABLE_LS_COLORS="true"
-
-# Which plugins would you like to load? (plugins can be found in
-# ~/.oh-my-zsh/plugins/*)
-# Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew gem git osx rails bundler zsh-syntax-highlighting)
-
 source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
 
 # Tab-complete .. !
 zstyle ':completion:*' special-dirs true
@@ -35,9 +16,6 @@ setopt nocorrectall
 
 # Homebrew
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
-
-# NPM
-PATH=/usr/local/share/npm/bin:$PATH
 
 # Better Up and Down keys behavior
 bindkey "^[[A" history-search-backward
@@ -61,9 +39,6 @@ export DISABLE_AUTO_TITLE=true
 
 # Default editor
 export EDITOR='vim'
-
-# Cabal
-export PATH=~/.cabal/bin:$PATH
 
 # z
 [ -e `brew --prefix`/etc/profile.d/z.sh ] && . `brew --prefix`/etc/profile.d/z.sh
