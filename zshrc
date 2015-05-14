@@ -34,8 +34,9 @@ alias pro='tmux new-session -A -s "${PWD##*/}"'
 export DISABLE_AUTO_TITLE=true
 
 # Chruby
-[ -e /usr/local/opt/chruby/share/chruby/chruby.sh ] && source /usr/local/opt/chruby/share/chruby/chruby.sh
-[ -e /usr/local/opt/chruby/share/chruby/auto.sh ] && source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby_dir="/usr/local/opt/chruby/share/chruby"
+[ -e "$chruby_dir/chruby.sh" ] && source "$chruby_dir/chruby.sh"
+[ -e "$chruby_dir/auto.sh" ] && source "$chruby_dir/auto.sh"
 
 # Default editor
 export EDITOR='vim'
