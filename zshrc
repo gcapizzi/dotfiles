@@ -41,8 +41,5 @@ chruby_dir="/usr/local/opt/chruby/share/chruby"
 # Default editor
 export EDITOR='vim'
 
-# z
-[ -e `brew --prefix`/etc/profile.d/z.sh ] && . `brew --prefix`/etc/profile.d/z.sh
-
 # gh
 command -v gh >/dev/null 2>&1 && alias git=gh
