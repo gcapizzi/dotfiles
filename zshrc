@@ -42,4 +42,4 @@ chruby_dir="/usr/local/opt/chruby/share/chruby"
 export EDITOR='vim'
 
 # gh
-command -v gh >/dev/null 2>&1 && alias git=gh
+command -v gh >/dev/null 2>&1 && alias git=hub
