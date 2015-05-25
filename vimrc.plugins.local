@@ -2,15 +2,15 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'JazzCore/ctrlp-cmatcher'
 
 " HTML
-Plug 'othree/html5.vim'
+Plug 'othree/html5.vim', { 'on': 'html' }
 
 " Ruby
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby', { 'on': 'ruby' }
+Plug 'tpope/vim-rails', { 'on': 'ruby' }
 
 " Clojure
-Plug 'tpope/vim-fireplace'
-Plug 'guns/vim-clojure-static'
-Plug 'guns/vim-clojure-highlight'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'tpope/vim-fireplace', { 'on': 'clojure' }
+Plug 'guns/vim-clojure-static', { 'on': 'clojure' }
+Plug 'guns/vim-clojure-highlight', { 'on': 'clojure' }
+Plug 'guns/vim-sexp', { 'on': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'on': 'clojure' }
