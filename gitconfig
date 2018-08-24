@@ -1,6 +1,8 @@
 [user]
 	name = Giuseppe Capizzi
 	email = g.capizzi@gmail.com
+[core]
+	excludesfile = ~/.gitignore
 [alias]
 	st = status
 	ci = commit
