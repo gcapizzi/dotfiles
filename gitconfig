@@ -1,18 +1,18 @@
 [user]
-    name = Giuseppe Capizzi
-    email = g.capizzi@gmail.com
+	name = Giuseppe Capizzi
+	email = g.capizzi@gmail.com
 [alias]
-    st = status
-    ci = commit
-    br = branch
-    co = checkout
-    df = diff
-    dc = diff --cached
-    lg = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset'
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	dc = diff --cached
+	lg = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset'
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
 [pull]
-    rebase = true
+	rebase = true
 [status]
-    short = 1
-    branch = 1
+	short = 1
+	branch = 1
