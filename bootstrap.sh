@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+set -e
+
 endpath="$HOME/.dotfiles"
 
 echo "\n### Bootstrap started ###"
