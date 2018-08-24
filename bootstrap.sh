@@ -4,28 +4,26 @@ set -e
 
 endpath="$HOME/.dotfiles"
 
-echo "\n### Bootstrap started ###"
-
 if [ -e $endpath/.git ] ; then
-    echo "\n> update repo\n"
+    echo "> update repo"
     cd $endpath && git pull
 else
-    echo "\n> clone repo\n"
+    echo "> clone repo"
     git clone http://github.com/gcapizzi/dotfiles.git $endpath
 fi
 
-if command -v brew ; then
-    echo "\n> brew upgrade\n"
+if command -v brew >/dev/null ; then
+    echo "> brew upgrade"
     brew upgrade
 else
-    echo "\n> install Homebrew\n"
+    echo "> install Homebrew"
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-echo "> brew bundle\n"
+echo "> brew bundle"
 cd $endpath && brew bundle
 
-echo "> set up symlinks\n"
+echo "> set up symlinks"
 ln -sf $endpath/zshrc $HOME/.zshrc
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/gitignore $HOME/.gitignore
