@@ -6,7 +6,7 @@ endpath="$HOME/.dotfiles"
 
 echo "\n### Bootstrap started ###"
 
-if [ -e $endpath/.git ]; then
+if [ -e $endpath/.git ] ; then
     echo "\n> update repo\n"
     cd $endpath && git pull
 else
@@ -20,7 +20,7 @@ ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/gitignore $HOME/.gitignore
 ln -sf $endpath/tmux.conf $HOME/.tmux.conf
 
-if zplug check; then
+if zplug check ; then
     echo "\n> zplug update\n"
     zplug update
 else
