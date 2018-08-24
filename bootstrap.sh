@@ -31,11 +31,5 @@ ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/gitignore $HOME/.gitignore
 ln -sf $endpath/tmux.conf $HOME/.tmux.conf
 
-if zplug check ; then
-    echo "\n> zplug update\n"
-    zplug update
-else
-    echo "\n> zplug install\n"
-    zplug install
-fi
-
+echo "> zplug install/update"
+/bin/zsh -c "source ~/.zshrc && ((zplug check && zplug install) || zplug update)"
