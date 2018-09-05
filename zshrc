@@ -3,6 +3,7 @@ zstyle ':completion:*' special-dirs true
 
 # Aliases
 alias ls='ls -FGhp'
+alias ll='ls -l'
 alias pro='tmux new-session -A -s "${PWD##*/}"'
 
 # Default editor
