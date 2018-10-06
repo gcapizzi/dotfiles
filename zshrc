@@ -6,8 +6,7 @@ alias ls='ls -FGhp'
 alias ll='ls -l'
 alias p='tmux new-session -A -s "${PWD##*/}"'
 
-# Default editor
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # fasd
 eval "$(fasd --init auto)"
