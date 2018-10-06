@@ -6,6 +6,9 @@ alias ls='ls -FGhp'
 alias ll='ls -l'
 alias p='tmux new-session -A -s "${PWD##*/}"'
 
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 export EDITOR='nvim'
 
 # fasd
