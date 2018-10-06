@@ -18,3 +18,5 @@
 [status]
 	short = 1
 	branch = 1
+[merge]
+	conflictstyle = diff3
