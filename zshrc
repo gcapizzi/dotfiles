@@ -11,6 +11,9 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export EDITOR='nvim'
 
+# Emacs mode
+bindkey -e
+
 # fasd
 eval "$(fasd --init auto)"
 
