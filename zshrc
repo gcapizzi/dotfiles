@@ -23,6 +23,9 @@ eval "$(fasd --init auto)"
 # direnv
 eval "$(direnv hook zsh)"
 
+# starship
+eval "$(starship init zsh)"
+
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
