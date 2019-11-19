@@ -28,6 +28,7 @@ ln -sf $endpath/zshrc $HOME/.zshrc
 ln -sf $endpath/gitconfig $HOME/.gitconfig
 ln -sf $endpath/gitignore $HOME/.gitignore
 ln -sf $endpath/tmux.conf $HOME/.tmux.conf
+ln -sf $endpath/alacritty.yml $HOME/.alacritty.yml
 
 echo "> zplug install/update"
 /bin/zsh -c "source ~/.zshrc && ((zplug check && zplug install) || zplug update)"

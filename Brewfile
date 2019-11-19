@@ -12,6 +12,7 @@ brew "zplug"
 brew "zsh"
 
 cask "1password"
+cask "alacritty"
 cask "dropbox"
 cask "flux"
 cask "google-chrome"
