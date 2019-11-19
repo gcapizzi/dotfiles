@@ -1,3 +1,4 @@
+brew "direnv"
 brew "fasd"
 brew "git"
 brew "neovim"

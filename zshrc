@@ -20,6 +20,9 @@ eval "$(fasd --init auto)"
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# direnv
+eval "$(direnv hook zsh)"
+
 # zplug
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
