@@ -3,6 +3,7 @@
 	email = g.capizzi@gmail.com
 [core]
 	excludesfile = ~/.gitignore
+	pager = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
 [alias]
 	st = status
 	ci = commit
