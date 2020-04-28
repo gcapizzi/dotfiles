@@ -3,7 +3,7 @@
 	email = g.capizzi@gmail.com
 [core]
 	excludesfile = ~/.gitignore
-	pager = /usr/local/opt/git/share/git-core/contrib/diff-highlight/diff-highlight | less
+	pager = delta --theme=Dracula --24-bit-color=always
 [alias]
 	st = status
 	ci = commit
@@ -21,3 +21,5 @@
 	branch = 1
 [merge]
 	conflictstyle = diff3
+[interactive]
+	diffFilter = delta --theme=Dracula --24-bit-color=always --color-only

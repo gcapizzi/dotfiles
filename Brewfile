@@ -1,6 +1,7 @@
 brew "direnv"
 brew "fasd"
 brew "git"
+brew "git-delta"
 brew "neovim"
 brew "ripgrep"
 brew "starship"
