@@ -1,6 +1,9 @@
 # Tab-complete .. !
 zstyle ':completion:*' special-dirs true
 
+# fn + backspace = delete
+bindkey "\e[3~" delete-char
+
 # Aliases
 alias ls='ls -FGhp'
 alias ll='ls -l'
