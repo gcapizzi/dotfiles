@@ -37,6 +37,5 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "dracula/zsh", as:theme, use:dracula.zsh-theme
 
 zplug load
