@@ -27,3 +27,5 @@
 [delta]
 	true-color = always
 	diff-so-fancy = true
+[init]
+	defaultBranch = main
