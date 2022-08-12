@@ -32,4 +32,4 @@ colors:
     cyan:    '0x9aedfe'
     white:   '0xe6e6e6'
 key_bindings:
-  - { key: N, mods: Command, action: SpawnNewInstance }
+  - { key: N, mods: Command, action: CreateNewWindow }
