@@ -18,6 +18,11 @@ bindkey -e
 # *must* come after `bindkey -e`!
 bindkey "\e[3~" delete-char
 
+# Edit commands in the $EDITOR
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey "^X^E" edit-command-line
+
 # fasd
 eval "$(fasd --init auto)"
 
