@@ -1,9 +1,6 @@
 # Tab-complete .. !
 zstyle ':completion:*' special-dirs true
 
-# fn + backspace = delete
-bindkey "\e[3~" delete-char
-
 # Aliases
 alias ls='ls -FGhp'
 alias ll='ls -l'
@@ -16,6 +13,10 @@ export EDITOR='nvim'
 
 # Emacs mode
 bindkey -e
+
+# fn + backspace = delete
+# *must* come after `bindkey -e`!
+bindkey "\e[3~" delete-char
 
 # fasd
 eval "$(fasd --init auto)"
