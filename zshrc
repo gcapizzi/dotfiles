@@ -23,9 +23,6 @@ autoload -z edit-command-line
 zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
-# fasd
-eval "$(fasd --init auto)"
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
