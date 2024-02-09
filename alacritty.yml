@@ -6,7 +6,7 @@ window:
     y: 5
 font:
   normal:
-    family: Fira Code
+    family: FiraCode Nerd Font
   size: 18.0
 colors:
   primary:
