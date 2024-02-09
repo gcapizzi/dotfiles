@@ -12,17 +12,6 @@ else
     git clone http://github.com/gcapizzi/dotfiles.git $endpath
 fi
 
-if command -v brew >/dev/null ; then
-    echo "> brew upgrade"
-    brew upgrade
-else
-    echo "> install Homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
-
-echo "> brew bundle"
-cd $endpath && brew bundle
-
 echo "> set up symlinks"
 ln -sf $endpath/zshrc $HOME/.zshrc
 ln -sf $endpath/gitconfig $HOME/.gitconfig
