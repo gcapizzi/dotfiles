@@ -2,22 +2,14 @@
 
 set -e
 
-endpath="$HOME/.dotfiles"
-
-if [ -e "$endpath/.git" ]; then
-	echo "> update repo"
-	cd "$endpath" && git pull
-else
-	echo "> clone repo"
-	git clone http://github.com/gcapizzi/dotfiles.git "$endpath"
-fi
+dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 
 echo "> set up symlinks"
-ln -sf "$endpath/zshrc" "$HOME/.zshrc"
-ln -sf "$endpath/gitconfig" "$HOME/.gitconfig"
-ln -sf "$endpath/gitignore" "$HOME/.gitignore"
-ln -sf "$endpath/tmux.conf" "$HOME/.tmux.conf"
-ln -sf "$endpath/alacritty.toml" "$HOME/.alacritty.toml"
+ln -sf "$dir/zshrc" "$HOME/.zshrc"
+ln -sf "$dir/gitconfig" "$HOME/.gitconfig"
+ln -sf "$dir/gitignore" "$HOME/.gitignore"
+ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
+ln -sf "$dir/alacritty.toml" "$HOME/.alacritty.toml"
 
 echo "> zplug install/update"
 /bin/zsh -c "source ~/.zshrc && ((zplug check && zplug install) || zplug update)"
