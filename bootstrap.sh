@@ -26,3 +26,8 @@ else
 	git clone https://github.com/zplug/zplug.git ~/.zplug
 	/bin/zsh -c "source ~/.zshrc && zplug check && zplug install"
 fi
+
+echo "> install nvim config"
+if [[ ! -d "$HOME/.config/nvim" ]]; then
+	git clone https://github.com/gcapizzi/nvim-lua.git ~/.config/nvim
+fi
