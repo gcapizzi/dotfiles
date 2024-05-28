@@ -2,6 +2,14 @@
 
 set -e
 
+if command -v -- "brew" > /dev/null 2>&1; then
+	brew install direnv fzf git git-delta neovim starship tmux
+fi
+
+if command -v -- "port" > /dev/null 2>&1; then
+	sudo port install direnv fzf git git-delta neovim starship tmux
+fi
+
 dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 echo "> set up symlinks"
