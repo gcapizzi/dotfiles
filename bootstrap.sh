@@ -1,8 +1,8 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 set -e
 
-dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 echo "> set up symlinks"
 ln -sf "$dir/zshrc" "$HOME/.zshrc"
