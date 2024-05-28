@@ -36,7 +36,7 @@ zle -N edit-command-line
 bindkey "^X^E" edit-command-line
 
 # fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # direnv
 eval "$(direnv hook zsh)"
