@@ -31,11 +31,6 @@ size = 16.0
 [font.normal]
 family = "FiraCode Nerd Font"
 
-[[keyboard.bindings]]
-action = "CreateNewWindow"
-key = "N"
-mods = "Command"
-
 [window.padding]
 x = 5
 y = 5
