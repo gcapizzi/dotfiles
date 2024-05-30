@@ -2,6 +2,11 @@
 
 set -e
 
+if [[ "$CODESPACES" == "true" ]]; then
+	NONINTERNACTIVE=1 bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 if command -v -- "brew" >/dev/null 2>&1; then
 	brew install direnv fzf git git-delta neovim starship tmux
 fi
@@ -18,6 +23,11 @@ ln -sf "$dir/gitconfig" "$HOME/.gitconfig"
 ln -sf "$dir/gitignore" "$HOME/.gitignore"
 ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$dir/alacritty.toml" "$HOME/.alacritty.toml"
+
+if [[ "$CODESPACES" == "true" ]]; then
+	printf '%s\n%s\n' "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" "$(cat ~/.zshrc)" >~/.zshrc
+	sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
+fi
 
 echo "> zplug install/update"
 if [[ -d "$HOME/.zplug" ]]; then
