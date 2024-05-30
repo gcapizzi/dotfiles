@@ -25,10 +25,16 @@ export EDITOR='nvim'
 
 # Emacs mode
 bindkey -e
-
 # fn + backspace = delete
-# *must* come after `bindkey -e`!
 bindkey "\e[3~" delete-char
+# home/end
+bindkey "\e[H" beginning-of-line
+bindkey "\e[F" end-of-line
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+# page up/down = word back/forward
+bindkey "\e[5~" backward-word
+bindkey "\e[6~" forward-word
 
 # Edit commands in the $EDITOR
 autoload -z edit-command-line
