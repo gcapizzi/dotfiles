@@ -34,7 +34,7 @@ if [[ -d "$HOME/.zplug" ]]; then
 	/bin/zsh -c "source ~/.zshrc && zplug update"
 else
 	git clone https://github.com/zplug/zplug.git ~/.zplug
-	/bin/zsh -c "source ~/.zshrc && zplug check && zplug install"
+	/bin/zsh -c "source ~/.zshrc && zplug install"
 fi
 
 echo "> install nvim config"
