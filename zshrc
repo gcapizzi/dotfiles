@@ -44,12 +44,12 @@ eval "$(direnv hook zsh)"
 # starship
 eval "$(starship init zsh)"
 
-# zplug
-source $HOME/.zplug/init.zsh
+# completions
+fpath=(~/.zsh/zsh-completions/src $fpath)
+autoload -Uz compinit
+compinit
 
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-completions"
-zplug "zsh-users/zsh-history-substring-search"
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-
-zplug load
+# plugins
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh

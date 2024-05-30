@@ -29,13 +29,13 @@ if [[ "$CODESPACES" == "true" ]]; then
 	sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
 fi
 
-echo "> zplug install/update"
-if [[ -d "$HOME/.zplug" ]]; then
-	/bin/zsh -c "source ~/.zshrc && zplug update"
-else
-	git clone https://github.com/zplug/zplug.git ~/.zplug
-	/bin/zsh -c "source ~/.zshrc && zplug install"
-fi
+echo "> zsh plugins and completions"
+mkdir -p "$HOME/.zsh"
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-search
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
 
 echo "> install nvim config"
 if [[ ! -d "$HOME/.config/nvim" ]]; then
