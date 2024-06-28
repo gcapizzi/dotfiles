@@ -11,7 +11,7 @@
 	co = checkout
 	df = diff
 	dc = diff --cached
-	lg = log --graph --topo-order --abbrev-commit --date=short --decorate --all --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset' ; https://github.com/GitAlias/gitalias
+	lg = log --graph --topo-order --abbrev-commit --date=short --decorate --boundary --pretty=format:'%Cgreen%ad %Cred%h%Creset -%C(yellow)%d%Creset %s %Cblue[%cn]%Creset %Cblue%G?%Creset' ; https://github.com/GitAlias/gitalias
 [credential]
 	helper = osxkeychain
 [pull]
