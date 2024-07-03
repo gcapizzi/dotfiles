@@ -8,7 +8,7 @@ if [[ "$CODESPACES" == "true" ]]; then
 fi
 
 if command -v -- "brew" >/dev/null 2>&1; then
-	brew install direnv fd fzf git git-delta neovim ripgrep starship tmux
+	brew install direnv fd fzf git git-delta neovim ripgrep ruby starship tmux
 fi
 
 if command -v -- "port" >/dev/null 2>&1; then
