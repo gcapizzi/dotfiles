@@ -1,26 +1,43 @@
-[colors.bright]
-black = "0x575b70"
-blue = "0xcaa9fa"
-cyan = "0x9aedfe"
-green = "0x5af78e"
-magenta = "0xff92d0"
-red = "0xff6e67"
-white = "0xe6e6e6"
-yellow = "0xf4f99d"
-
-[colors.normal]
-black = "0x000000"
-blue = "0xcaa9fa"
-cyan = "0x8be9fd"
-green = "0x50fa7b"
-magenta = "0xff79c6"
-red = "0xff5555"
-white = "0xbfbfbf"
-yellow = "0xf1fa8c"
-
+# TokyoNight Alacritty Colors
+# Default colors
 [colors.primary]
-background = "0x282a36"
-foreground = "0xf8f8f2"
+background = '#1a1b26'
+foreground = '#c0caf5'
+
+#[colors.cursor]
+#cursor = '#c0caf5'
+#text = '#1a1b26'
+
+# Normal colors
+[colors.normal]
+black = '#15161e'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#a9b1d6'
+
+# Bright colors
+[colors.bright]
+black = '#414868'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#c0caf5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff9e64'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#db4b4b'
 
 [env]
 TERM = "xterm-256color"
