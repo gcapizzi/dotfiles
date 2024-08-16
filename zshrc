@@ -20,8 +20,12 @@ setopt SHARE_HISTORY
 
 # PATH
 export PATH="$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH" # MacPorts
+export PATH="$HOME/go/bin:$PATH"
 
 export EDITOR='nvim'
+
+export FPATH="/opt/local/share/zsh/5.9/functions:$FPATH"
 
 # Emacs mode
 bindkey -e

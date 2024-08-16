@@ -37,6 +37,11 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-h
 git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
 
+echo "> tmux plugins"
+mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
+
+git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
+
 echo "> install nvim config"
 if [[ ! -d "$HOME/.config/nvim" ]]; then
 	git clone https://github.com/gcapizzi/nvim-lua.git ~/.config/nvim
