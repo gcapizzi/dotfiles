@@ -46,8 +46,6 @@ git_ensure https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-synta
 git_ensure https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
 
 echo "> tmux plugins"
-mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
-
 git_ensure https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
 
 echo "> install nvim config"
