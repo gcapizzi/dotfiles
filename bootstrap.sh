@@ -2,6 +2,14 @@
 
 set -e
 
+git_ensure() {
+	if [ -d "$2" ]; then
+		git -C "$2" pull
+	else
+		git clone "$1" "$2"
+	fi
+}
+
 if [[ "$CODESPACES" == "true" ]]; then
 	NONINTERNACTIVE=1 bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -32,10 +40,10 @@ fi
 echo "> zsh plugins and completions"
 mkdir -p "$HOME/.zsh"
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-search
-git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
+git_ensure https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git_ensure https://github.com/zsh-users/zsh-history-substring-search ~/.zsh/zsh-history-substring-search
+git_ensure https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+git_ensure https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completions
 
 echo "> tmux plugins"
 mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
@@ -43,6 +51,4 @@ mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
 git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
 
 echo "> install nvim config"
-if [[ ! -d "$HOME/.config/nvim" ]]; then
-	git clone https://github.com/gcapizzi/nvim-lua.git ~/.config/nvim
-fi
+git_ensure https://github.com/gcapizzi/nvim-lua.git "$HOME/.config/nvim"
