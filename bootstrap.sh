@@ -48,7 +48,7 @@ git_ensure https://github.com/zsh-users/zsh-completions.git ~/.zsh/zsh-completio
 echo "> tmux plugins"
 mkdir -p "$HOME/.config/tmux/plugins/catppuccin"
 
-git clone https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
+git_ensure https://github.com/catppuccin/tmux.git ~/.config/tmux/plugins/catppuccin
 
 echo "> install nvim config"
 git_ensure https://github.com/gcapizzi/nvim-lua.git "$HOME/.config/nvim"
