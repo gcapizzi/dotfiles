@@ -27,6 +27,8 @@ export EDITOR='nvim'
 
 export FPATH="/opt/local/share/zsh/5.9/functions:$FPATH"
 
+export SHELL="$(command -v zsh)"
+
 # Emacs mode
 bindkey -e
 # fn + backspace = delete
