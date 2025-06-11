@@ -13,6 +13,7 @@ git_ensure() {
 if [[ "$CODESPACES" == "true" ]]; then
 	NONINTERNACTIVE=1 bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
 	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+	brew install trash-cli
 fi
 
 if command -v -- "brew" >/dev/null 2>&1; then
@@ -20,7 +21,7 @@ if command -v -- "brew" >/dev/null 2>&1; then
 fi
 
 if command -v -- "port" >/dev/null 2>&1; then
-	sudo port install direnv fd fzf git git-delta neovim ripgrep starship tmux
+	sudo port install direnv fd fzf git git-delta neovim ripgrep starship tmux trash
 fi
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
