@@ -24,6 +24,10 @@ if command -v -- "port" >/dev/null 2>&1; then
 	sudo port install direnv fd fzf git git-delta neovim ripgrep starship tmux trash
 fi
 
+if command -v -- "pacman" >/dev/null 2>&1; then
+	sudo pacman -S direnv fd fzf git git-delta neovim ripgrep starship tmux trash-cli
+fi
+
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
 echo "> set up symlinks"
