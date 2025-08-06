@@ -17,15 +17,15 @@ if [[ "$CODESPACES" == "true" ]]; then
 fi
 
 if command -v -- "brew" >/dev/null 2>&1; then
-	brew install direnv fd fzf git git-delta neovim ripgrep ruby starship tmux
+	brew install direnv fd fzf git git-delta neovim ripgrep ruby starship tmux zellij
 fi
 
 if command -v -- "port" >/dev/null 2>&1; then
-	sudo port install direnv fd fzf git git-delta neovim ripgrep starship tmux trash
+	sudo port install direnv fd fzf git git-delta neovim ripgrep starship tmux trash zellij
 fi
 
 if command -v -- "pacman" >/dev/null 2>&1; then
-	sudo pacman -S direnv fd fzf git git-delta neovim ripgrep starship tmux trash-cli
+	sudo pacman -S direnv fd fzf git git-delta neovim ripgrep starship tmux trash-cli zellij
 fi
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
@@ -37,6 +37,8 @@ ln -sf "$dir/gitignore" "$HOME/.gitignore"
 ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$dir/alacritty.toml" "$HOME/.alacritty.toml"
 ln -sf "$dir/wezterm.lua" "$HOME/.wezterm.lua"
+ln -sf "$dir/wezterm.lua" "$HOME/.wezterm.lua"
+mkdir -p "$HOME/.config/zellij" && ln -sf "$dir/zellij.kdl" "$HOME/.config/zellij/config.kdl"
 
 if [[ "$CODESPACES" == "true" ]]; then
 	printf '%s\n%s\n' "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" "$(cat ~/.zshrc)" >~/.zshrc
