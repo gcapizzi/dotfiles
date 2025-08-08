@@ -25,7 +25,7 @@ if command -v -- "port" >/dev/null 2>&1; then
 fi
 
 if command -v -- "pacman" >/dev/null 2>&1; then
-	sudo pacman -S direnv fd fzf git git-delta neovim ripgrep starship tmux trash-cli zellij
+	sudo pacman -S --needed direnv fd fzf git git-delta neovim ripgrep starship tmux trash-cli zellij
 fi
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
