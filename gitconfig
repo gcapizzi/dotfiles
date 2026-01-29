@@ -12,7 +12,6 @@
 	sw = switch
 	rr = restore
 	fp = fetch --all --prune
-	pl = pull --rebase
 	pf = push --force-with-lease
 	df = diff
 	dc = diff --cached
