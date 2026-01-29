@@ -6,6 +6,8 @@
 	pager = delta
 [alias]
 	st = status
+	aa = add --all
+	ap = add --patch
 	ci = commit
 	ca = commit --amend --no-edit
 	br = branch
