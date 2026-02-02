@@ -12,6 +12,7 @@
 	ca = commit --amend --no-edit
 	br = branch
 	sw = switch
+	sc = switch --create
 	rr = restore
 	fp = fetch --all --prune
 	pf = push --force-with-lease
