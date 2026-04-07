@@ -35,7 +35,6 @@ ln -sf "$dir/zshrc" "$HOME/.zshrc"
 ln -sf "$dir/gitconfig" "$HOME/.gitconfig"
 ln -sf "$dir/gitignore" "$HOME/.gitignore"
 ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
-ln -sf "$dir/alacritty.toml" "$HOME/.alacritty.toml"
 ln -sf "$dir/wezterm.lua" "$HOME/.wezterm.lua"
 mkdir -p "$HOME/.config/helix" && ln -sf "$dir/helix.toml" "$HOME/.config/helix/config.toml"
 
