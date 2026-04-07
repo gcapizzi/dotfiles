@@ -20,10 +20,6 @@ if command -v -- "brew" >/dev/null 2>&1; then
 	brew install direnv fd fzf git git-delta helix neovim ripgrep ruby starship tmux
 fi
 
-if command -v -- "port" >/dev/null 2>&1; then
-	sudo port install direnv fd fzf git git-delta helix neovim ripgrep starship tmux trash
-fi
-
 if command -v -- "pacman" >/dev/null 2>&1; then
 	sudo pacman -S --needed direnv fd fzf git git-delta helix neovim ripgrep starship tmux trash-cli
 fi
