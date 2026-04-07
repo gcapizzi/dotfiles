@@ -1,0 +1,8 @@
+theme = "catppuccin_mocha"
+
+[editor]
+bufferline = "always"
+cursorline = true
+
+[editor.indent-guides]
+render = true
