@@ -8,3 +8,4 @@ theme = "Catppuccin Macchiato"
 window-padding-x = 5
 window-padding-y = 5
 scrollbar = system
+macos-option-as-alt = true
