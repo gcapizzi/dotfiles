@@ -16,7 +16,7 @@ if [[ "$CODESPACES" == "true" ]]; then
 	brew install trash-cli
 fi
 
-brew install direnv fd fzf git git-delta helix neovim ripgrep ruby starship tmux
+brew install direnv fd fzf git git-delta helix neovim ripgrep starship tmux
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
