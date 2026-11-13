@@ -10,12 +10,6 @@ git_ensure() {
 	fi
 }
 
-if [[ "$CODESPACES" == "true" ]]; then
-	NONINTERNACTIVE=1 bash <(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
-	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-	brew install trash-cli
-fi
-
 brew install direnv fd fzf git git-delta herdr neovim ripgrep starship tmux
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
@@ -28,11 +22,6 @@ ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$dir/wezterm.lua" "$HOME/.wezterm.lua"
 mkdir -p "$HOME/.config/ghostty" && ln -sf "$dir/ghostty" "$HOME/.config/ghostty/config"
 mkdir -p "$HOME/.config/herdr" && ln -sf "$dir/herdr.toml" "$HOME/.config/herdr/config.toml"
-
-if [[ "$CODESPACES" == "true" ]]; then
-	printf '%s\n%s\n' "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" "$(cat ~/.zshrc)" >~/.zshrc
-	sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
-fi
 
 echo "> zsh plugins and completions"
 mkdir -p "$HOME/.zsh"
