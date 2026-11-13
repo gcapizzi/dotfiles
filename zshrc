@@ -59,7 +59,7 @@ eval "$(starship init zsh)"
 # completions
 fpath=(~/.zsh/zsh-completions/src $fpath)
 autoload -Uz compinit
-compinit
+compinit -u
 
 # plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
