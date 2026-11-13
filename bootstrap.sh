@@ -16,7 +16,7 @@ if [[ "$CODESPACES" == "true" ]]; then
 	brew install trash-cli
 fi
 
-brew install direnv fd fzf git git-delta helix neovim ripgrep starship tmux
+brew install direnv fd fzf git git-delta helix herdr neovim ripgrep starship tmux
 
 dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 
@@ -28,6 +28,7 @@ ln -sf "$dir/tmux.conf" "$HOME/.tmux.conf"
 ln -sf "$dir/wezterm.lua" "$HOME/.wezterm.lua"
 mkdir -p "$HOME/.config/helix" && ln -sf "$dir/helix.toml" "$HOME/.config/helix/config.toml"
 mkdir -p "$HOME/.config/ghostty" && ln -sf "$dir/ghostty" "$HOME/.config/ghostty/config"
+mkdir -p "$HOME/.config/herdr" && ln -sf "$dir/herdr.toml" "$HOME/.config/herdr/config.toml"
 
 if [[ "$CODESPACES" == "true" ]]; then
 	printf '%s\n%s\n' "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" "$(cat ~/.zshrc)" >~/.zshrc

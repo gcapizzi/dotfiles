@@ -1,0 +1,10 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+a"
+previous_workspace = "prefix+{"
+next_workspace = "prefix+}"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
