@@ -1,2 +1,3 @@
 theme = catppuccin-mocha
 post-flush-command = pbcopy
+word-diff = true
