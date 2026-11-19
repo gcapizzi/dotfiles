@@ -2,8 +2,11 @@ onboarding = false
 
 [keys]
 prefix = "ctrl+a"
-previous_workspace = "prefix+{"
-next_workspace = "prefix+}"
+previous_workspace = "prefix+ctrl+["
+next_workspace = "prefix+ctrl+]"
+previous_agent = "prefix+ctrl+,"
+next_agent = "prefix+ctrl+."
+remove_worktree = "prefix+ctrl+d"
 
 [theme]
 name = "catppuccin"
